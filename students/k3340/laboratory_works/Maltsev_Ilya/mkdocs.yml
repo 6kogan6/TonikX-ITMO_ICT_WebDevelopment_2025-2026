@@ -1,16 +1,16 @@
-site_name: labs
-nav:
-    - Home: index.md
-    - Lab 1:
-      - Task 1: lr1/task1.md
-      - Task 2: lr1/task2.md
-      - Task 3: lr1/task3.md
-      - Task 4: lr1/task4.md
-      - Task 5: lr1/task5.md
-  - Lab 2:
-    - "Лабораторная работа": lr2/lab2.md
-  - Lab 3:
-    - "Практическая работа": pr1/pr1.md
-    - "Лабораторная работа": lr3/lab3.md
+site_name: Отчёты Мальцев Илья
 theme:
-    name: mkdocs
+  name: material
+  language: ru
+
+nav:
+  - Главная: index.md
+  - ЛР1:
+      - Задание 1: lr1/task1.md
+      - Задание 2: lr1/task2.md
+      - Задание 3: lr1/task3.md
+      - Задание 4: lr1/task4.md
+      - Задание 5: lr1/task5.md
+  - ЛР2: lr2/lab2.md
+  - ЛР3: lr3/lab3.md
+  - ЛР4: lr4/lab4.md
