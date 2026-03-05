@@ -31,7 +31,9 @@ class HandlerThread(threading.Thread):
                 if not msg:
                     break
                 self.notify_all(msg)
-            except (socket.timeout, OSError, ConnectionResetError):
+            except socket.timeout:
+                continue
+            except (OSError, ConnectionResetError):
                 break
 
         self.remove_connection()

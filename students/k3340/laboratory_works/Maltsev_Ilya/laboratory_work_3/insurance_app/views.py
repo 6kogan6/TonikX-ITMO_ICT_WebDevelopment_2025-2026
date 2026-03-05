@@ -28,7 +28,7 @@ class IndividualClientAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = IndividualClientSerializer(data=request.data, many=True)
+        serializer = IndividualClientSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -51,7 +51,7 @@ class AgentAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = AgentSerializer(data=request.data, many=True)
+        serializer = AgentSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -74,7 +74,7 @@ class IndividualContractAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = IndividualContractWriteSerializer(data=request.data, many=True)
+        serializer = IndividualContractWriteSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -96,7 +96,7 @@ class LaborContractAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = LaborContractWriteSerializer(data=request.data, many=True)
+        serializer = LaborContractWriteSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -119,7 +119,7 @@ class OrganizationAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = OrganizationSerializer(data=request.data, many=True)
+        serializer = OrganizationSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -142,7 +142,7 @@ class CollectiveContractAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = CollectiveContractWriteSerializer(data=request.data, many=True)
+        serializer = CollectiveContractWriteSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -165,7 +165,7 @@ class RiskCategoryAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = RiskCategorySerializer(data=request.data, many=True)
+        serializer = RiskCategorySerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -182,7 +182,7 @@ class InsuredEmployeeAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = InsuredEmployeeWriteSerializer(data=request.data, many=True)
+        serializer = InsuredEmployeeWriteSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -205,7 +205,7 @@ class InsuredEventIndividualAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = InsuredEventIndividualWriteSerializer(data=request.data, many=True)
+        serializer = InsuredEventIndividualWriteSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -222,7 +222,7 @@ class IndividualPaymentAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = IndividualPaymentWriteSerializer(data=request.data, many=True)
+        serializer = IndividualPaymentWriteSerializer(data=request.dat)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -239,7 +239,7 @@ class InsuredEmployeeEventAPIView(GenericAPIView):
         return Response(serializer.data)
 
     def post(self, request):
-        serializer = InsuredEventEmployeeWriteSerializer(data=request.data, many=True)
+        serializer = InsuredEventEmployeeWriteSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
